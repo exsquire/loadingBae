@@ -10,6 +10,6 @@ Regular expression method of loading pipeline inputs
 pathList <- loadingBae("./inputfolder", c("rownames", "colnames", "data"))
 
 data <- read.csv(pathList[["data"]])
-rownames(data) <- readRDS(pathList[["rownames"]])
-colnames(data) <- readLines(pathList[["colnames"]]
+rownames(data) <- readLines(pathList[["rownames"]])
+colnames(data) <- readRDS(pathList[["colnames"]]
 ```
