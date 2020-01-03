@@ -7,7 +7,7 @@ Regular expression method of loading pipeline inputs
 - Output is named list with path to key word match
 - ex.) 
 ```
-ls("./inputfolder")
+list.files("./inputfolder")
 > samp_rownames.txt, samp_colnames.rds, samp_data.csv 
 
 pathList <- loadingBae("./inputfolder", c("rownames", "colnames", "data"))
